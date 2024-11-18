@@ -1,8 +1,10 @@
 // FILE: scripts.js
 window.addEventListener('scroll', function() {
     const header = document.getElementById('main-header');
+    const footer = document.getElementById('main-footer');
     if (window.scrollY > 30) {
         header.classList.add('shrink');
+        footer.classList.add('shrink');
     }
 });
 
@@ -15,5 +17,26 @@ document.querySelectorAll('nav ul li a').forEach(anchor => {
     anchor.addEventListener('click', function() {
         const header = document.getElementById('main-header');
         header.classList.add('shrink');
+        const footer = document.getElementById('main-footer');
+        footer.classList.add('shrink');
     });
 });
+// Function to create falling pictures
+function createFallingPicture(src) {
+    const picture = document.createElement('img');
+    picture.src = src;
+    picture.classList.add('falling-picture');
+    picture.style.left = `${Math.random() * 100}%`;
+    document.getElementById('falling-pictures').appendChild(picture);
+
+    // Remove the picture after the animation ends
+    picture.addEventListener('animationend', () => {
+        picture.remove();
+    });
+}
+
+// Add falling pictures at intervals
+setInterval(() => {
+    createFallingPicture('./summer/3 cute2.jpg'); // Replace with your image paths
+    createFallingPicture('./summer/bunny2.webp'); // Replace with your image paths
+}, 1000); // Adjust the interval as needed

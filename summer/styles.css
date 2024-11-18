@@ -1,5 +1,5 @@
 body {
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Ubuntu', sans-serif; /* Change this to your preferred font */
     margin: 0;
     padding: 0;
     display: flex;
@@ -22,7 +22,7 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 80vh;
 }
 
 header h1 {
@@ -129,7 +129,9 @@ section {
 #about {
     margin-top: 10rem; /* Adjust this value to move the section further down */
 }
-
+#skills {
+    margin-bottom: 10rem; /* Adjust this value to move the section further down */
+}
 section:not(#about) {
     margin-top: 3rem; /* Smaller margin for other sections */
 }
@@ -141,41 +143,65 @@ section h2 {
 
 section p,
 section ul,
-section span{
+section span {
     margin-top: 0; /* Remove any default margin-top */
     margin-bottom: 0;
 }
-.right-aligned-text{
+
+.right-aligned-text {
     display: inline-block;
     float: right;
     text-align: right;
 }
+
 .contact-icons {
     display: flex;
     justify-content: center; /* Center the icons horizontally */
     align-items: center; /* Center the icons vertically */
     gap: 1rem; /* Add space between the icons */
 }
+
 .contact-icons a {
     display: flex;
     align-items: center;
-    margin-bottom: 0.5rem;
     color: grey; /* Ensure the links are white */
     text-decoration: none; /* Remove the underline */
 }
+
 .contact-icons a img {
     margin-right: 0.5rem;
     width: 24px; /* Set the width of the icons */
     height: 24px; /* Set the height of the icons */
 }
+
 footer {
     width: 100%;
     text-align: center;
     padding: 1rem 0;
     background-color: #333;
     color: white;
-    margin-top: auto;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
 }
+footer.shrink {
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 70px;
+}
+
 footer a {
     color: white; /* Ensure the links are white */
     text-decoration: none; /* Remove the underline */
@@ -183,4 +209,38 @@ footer a {
 
 footer a:hover {
     text-decoration: underline; /* Optional: Add underline on hover */
+}
+#falling-pictures {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Allow clicks to pass through */
+    z-index: 999; /* Ensure it is above other content */
+}
+
+.falling-picture {
+    position: absolute;
+    width: 50px; /* Adjust the size of the pictures */
+    height: 50px; /* Adjust the size of the pictures */
+    animation: fall 5s linear infinite, roll 5s linear infinite;
+}
+
+@keyframes fall {
+    0% {
+        top: -10%;
+    }
+    100% {
+        top: 110%;
+    }
+}
+
+@keyframes roll {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
