@@ -1,55 +1,33 @@
 <!doctype html>
 <html class="h-100" lang="en">
 
-  <head>
-      <meta charset="utf-8">
-  <title>Portfolio of Pamikk</title>
-  <link rel="stylesheet" href="./summer/styles.css">
+<head>
+    <meta charset="utf-8">
+    <title>Portfolio of Pamikk</title>
+    <link rel="stylesheet" href="./summer/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lora:wght@400;700&family=Merriweather:wght@400;700&family=Open+Sans:wght@400;700&family=Playfair+Display:wght@400;700&family=Raleway:wght@400;700&family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Add your font-face definitions here */
+    </style>
+</head>
 
-   <style>
-
-/* inter-300 - latin */
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 300;
-  font-display: swap;
-  src: local(''),
-       url('./fonts/inter-v12-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('./fonts/inter-v12-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: local(''),
-       url('./fonts/inter-v12-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('./fonts/inter-v12-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: local(''),
-       url('./fonts/inter-v12-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('./fonts/inter-v12-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
-</style>
-
-  </head>
-
-  <body>
-    <header>
-        <h1>Welcome to My Portfolio</h1>
+<body>
+    <header id="main-header">
+        <h1>Pamikk<span id="keywords">
+            <span>Software Engineer & Algorithm Engineer</span>
+            <span>Computer Vision & Machine Learning</span>
+            <span>Gamer & Bunny Lover</span>
+        </span>  
+            
+        </h1>
         <nav>
+            <div id="menu-toggle">☰ Menu</div>
             <ul>
                 <li><a href="#about">About Me</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#skills">Skills</a></li>
+                <li><a href="#blogs">Blogs</a></li>
+                <li><a href="#gallery">Casey</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -57,17 +35,36 @@
 
     <section id="about">
         <h2>About Me</h2>
-        <p>Write something about yourself here.</p>
+        <ul>
+            <li>3+ yr expreienced Software Engineer/Algorithm Engineer @ VIVO San Diego.</li>
+            <li>Msc. from University of Florida, B.Eng from ShanghaiTech University, both in Compueter Science.</li>
+            <li>Have worked on 6DoF Object Pose estimation, NeRF and Neural Rendering.</li>
+            <li>Most recently work on 3DGS and MLLM tuning.</li>
+            <li>Love to play video games, live with my lionhead bunny Casey.</li>
+        </ul>
+        <span> &nbsp &nbsp &nbsp </span><a href="about.html">Details</a>
     </section>
 
     <section id="projects">
         <h2>Projects</h2>
-        <p>Showcase your projects here.</p>
+        <ul>
+            <li>Software Engineer/Algorithm Engineer @ VIVO San Diego.</li>
+            <li>Msc. from University of Florida, B.Eng from ShanghaiTech University, both in Compueter Science.</li>
+            <li>Have worked on 6DoF Object Pose estimation, NeRF and Neural Rendering.</li>
+            <li>Most recently work on 3DGS and MLLM tuning.</li>
+            <li>Love to play video games, live with my lionhead bunny Casey.</li>
+        </ul>
     </section>
 
     <section id="skills">
         <h2>Skills</h2>
-        <p>List your skills here.</p>
+        <ul>
+            <li>Coding Language: Python, C/C++, C#, MatLab, Java, JavaScript</li>
+            <li>Deep Learning: PyTorch, TensorFlow, JAX</li>
+            <li>Libaries: CUDA, OpenCV, OpenGL</li>
+            <li>Computer Vision, Machine Learning</li>
+            <li>3D Vision: NeRF, 3DGS, 3D Reconstruction</li>    
+        </ul>
     </section>
 
     <section id="contact">
@@ -78,6 +75,8 @@
     <footer>
         <p>&copy; 2024 Pamikk</p>
     </footer>
+
+    <script src="./summer/scripts.js"></script>
 </body>
 
 </html>
