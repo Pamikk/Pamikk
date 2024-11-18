@@ -1,5 +1,5 @@
 body {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
@@ -145,6 +145,29 @@ section span{
     margin-top: 0; /* Remove any default margin-top */
     margin-bottom: 0;
 }
+.right-aligned-text{
+    display: inline-block;
+    float: right;
+    text-align: right;
+}
+.contact-icons {
+    display: flex;
+    justify-content: center; /* Center the icons horizontally */
+    align-items: center; /* Center the icons vertically */
+    gap: 1rem; /* Add space between the icons */
+}
+.contact-icons a {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    color: grey; /* Ensure the links are white */
+    text-decoration: none; /* Remove the underline */
+}
+.contact-icons a img {
+    margin-right: 0.5rem;
+    width: 24px; /* Set the width of the icons */
+    height: 24px; /* Set the height of the icons */
+}
 footer {
     width: 100%;
     text-align: center;
@@ -152,4 +175,12 @@ footer {
     background-color: #333;
     color: white;
     margin-top: auto;
+}
+footer a {
+    color: white; /* Ensure the links are white */
+    text-decoration: none; /* Remove the underline */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Optional: Add underline on hover */
 }
