@@ -129,7 +129,10 @@ section {
 #about {
     margin-top: 10rem; /* Adjust this value to move the section further down */
 }
-#skills,#others {
+#skills {
+    margin-bottom: 10rem; /* Adjust this value to move the section further down */
+}
+#others {
     margin-bottom: 10rem; /* Adjust this value to move the section further down */
 }
 section:not(#about) {
