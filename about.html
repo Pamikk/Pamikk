@@ -18,14 +18,65 @@
                 <li><a href="#Education">Education</a></li>
                 <li><a href="#work">Work</a></li>
                 <li><a href="#others">Others</a></li>
+                <li><a href="./index.html">Back</a></li>
             </ul>
         </nav>
     </header>
+    <main>
+        <div id="falling-pictures-left"></div><div id="falling-pictures-right"></div>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I'm 徐佩嘉(Xu - family name,Peijia - given name) a.k.a Pami, a 27 yr old software engineer/algorithm engineer at VIVO. 
+                I was born in Qingdao, a beautiful coastal city in China, took my undergraduate study at Shanghai, Master Study at Gainesville and now worked at San Diego, 
+                which makes me used to living somewhere near sea. However I'd rather define myself as an insider who prefer to spending time on animation and video games 
+                than outdoor activities like hiking. I have been interested in Computer Vision since my undergraduate and started to understand the beauty of rendering after
+                Master study. And I would like to make my own game one day to tell a story through games, the nineth art.</p>
+        </section>
+        <section id="Education">
+            <h2>Education</h2>
+            <h3>Undergraduate(2015-2019) - ShanghaiTech University</h3>
+            <p> To be honest, my first choice was to study Physics but changed to Computer Science after a speech from dean of SIST, who inspired me to
+                learn more about Artifical Intelligence. During the years at ShanghaiTech, I established a strong mathematical foundations thanks to many graduate courses
+                like matrix analysis and convex optimization. After taking both computer vision(for undergraduate) and advanced computer vision(for graduate) courses, I found it
+                fanstastic to help computer understand the world. The results can be stupid when the model recognize a basketball as a person's head but it's also a beauty when you segment 
+                the images into superpixels based on the color and texture. I was lucky to get a chance to work at ShanghaiTechPLUS group, I participated in a project on human pose estimation, 
+                which give me an overview to carry out a research project from scratch. Then I study the object pose estimation as my undergraduate thesis and start my journey to 3D Vision.
+            </p>
+            <h3>Graduate(2019-2021) - University of Florida</h3>
+            <p>
+                Due to the large volume of peer classmates, I didn't get a chance to carry out my own research project with a supervisior. However, I took this chance to solidify my basic knowleges.
+                I took courses like computer graphics and high performance computing, where I got to touch OpenGL and CUDA. It's really amazing to render your own face. It got not only about learning 
+                but also getting related to research during my course project about Medical Image Analysis. With suggestions from Prof. Vemuri, I adapted an efficient brain tumor segmentation algorithm into 
+                hippocampus segmentation project with accuracy improvement while keeping its performance. It's always the most exciting thing to apply what you learned into something really benefit human beings.       </p>
+        </section>
+        <section id="work">
+            <h2>Work</h2>
+            <h3>2021.6-2021.9 Computer Vision Engineer(Intern) - Magic Leap, </h3>
+            <p> I was glad to get the chance to intern at Magic Leap, Perception team. There, I started my 12 week research journey with real-life application background. 
+                Although having limited resources like other edge devices, AR glasses still need real-time and accurate feedback to satisfy users. One solution is to make the
+                whole pipeline a coarse-to-fine algorithm to enable the ability to refine and correct the coarse results from sensor. And after exploring on existing algorithms,
+                I was able to design a lightweight pose refiner as a supplemental module to the existing large pose estimation model. I learned about product-centric thinking which is 
+                very different from academic research. And also all the daily syncups, weekly meetings and reading groups make me know about the real life for a engineer.
+            </p>
+            <h3>Software Engineer/Algorithm Engineer - VIVO, 2021.9-Now</h3>
+            <p>
+                I found my first job at VIVO at image advancing research department. At first two years, I was responsible for collaborations between VIVO and UCSD, on human portrait relighting which get 
+                me into Neural Radiance Fields(NeRF). We first tried to apply some SOTA methods on synthetic data and then we moved to object level relighting since it will have more accessible data. We publicated TensorIR at 
+                CVPR2023 then we further explore possibilities to apply NeRF on mobile devices. Then we tried to prototype InstantNGP and 3DGS and make a application to generate smooth cinematic video with user captured video. I was 
+                responsbile for algorithm implemenation and optimization. Further we carried a small project on Sparseview reconstruction then moved towards LLMs.
+            </p>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I'm 徐佩嘉(Xu - family name,Peijia - given name) a.k.a Pami, a 27 yr old software engineer/algorithm engineer at VIVO. </p>
-    </section>
+        </section>
+        <section id="others">
+            As I mentioned, I am a video game enjoyer. So I would like to share some of my gaming life here. I started to play overwatch since 2017 and getting interested into FPS as a hitscan player, I really 
+            enjoyed to play snipers and supports to have some the game changing actions. As a previous NDS player, I bought my switch for Tetris99 but fell in love with Zelda, it's amazing to enjoy a journey at a 
+            fantasy world. And the freedom of Tears of the Kingdom is really inspiring for programming - it must be very elegant programming to make the game run smoothly and freely. I also played some PC action games, my 
+            favorite is Sekiro and I'm really proud to perfectly finish it. The other type of games I like is the puzzle solving games especially with sci-fi story bakcground, I really recommend every one to play Portal and 
+            Portal2. I am always shocked by the creativity of the game designers.
+            Besides, I also like to follow some competitive scenes of the game, started from OWL and then into CS and Apex. It's always enjoyable to watch the strategies from high-skilled players and then made analysis based on 
+            data. Always love numbers and the unexpectable storylines behind the scenes.
+        </section>
+    </main>
 
     <footer class="shrink">
         <div class="contact-icons">
@@ -35,7 +86,7 @@
         </div>
         <p>&copy; 2024 Pamikk</p>
     </footer>
-    <div id="falling-pictures"></div>
+    
 
     <script src="./summer/scripts.js"></script>
 </body>

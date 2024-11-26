@@ -22,12 +22,12 @@ document.querySelectorAll('nav ul li a').forEach(anchor => {
     });
 });
 // Function to create falling pictures
-function createFallingPicture(src) {
+function createFallingPicture(src, containerId) {
     const picture = document.createElement('img');
     picture.src = src;
     picture.classList.add('falling-picture');
     picture.style.left = `${Math.random() * 100}%`;
-    document.getElementById('falling-pictures').appendChild(picture);
+    document.getElementById(containerId).appendChild(picture);
 
     // Remove the picture after the animation ends
     picture.addEventListener('animationend', () => {
@@ -37,6 +37,6 @@ function createFallingPicture(src) {
 
 // Add falling pictures at intervals
 setInterval(() => {
-    createFallingPicture('./summer/3 cute2.jpg'); // Replace with your image paths
-    createFallingPicture('./summer/bunny2.webp'); // Replace with your image paths
+    createFallingPicture('./summer/3 cute2.jpg', 'falling-pictures-left'); // Replace with your image paths
+    createFallingPicture('./summer/bunny2.webp', 'falling-pictures-right'); // Replace with your image paths
 }, 1000); // Adjust the interval as needed

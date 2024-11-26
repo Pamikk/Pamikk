@@ -129,7 +129,7 @@ section {
 #about {
     margin-top: 10rem; /* Adjust this value to move the section further down */
 }
-#skills {
+#skills,#others {
     margin-bottom: 10rem; /* Adjust this value to move the section further down */
 }
 section:not(#about) {
@@ -210,14 +210,22 @@ footer a {
 footer a:hover {
     text-decoration: underline; /* Optional: Add underline on hover */
 }
-#falling-pictures {
-    position: fixed;
+#falling-pictures-left,
+#falling-pictures-right {
+    position: absolute;
     top: 0;
-    left: 0;
-    width: 100%;
+    width: 10%; /* Adjust the width of the falling pictures area */
     height: 100%;
     pointer-events: none; /* Allow clicks to pass through */
     z-index: 999; /* Ensure it is above other content */
+}
+
+#falling-pictures-left {
+    left: 10px;
+}
+
+#falling-pictures-right {
+    right: 10px;
 }
 
 .falling-picture {
@@ -230,9 +238,14 @@ footer a:hover {
 @keyframes fall {
     0% {
         top: -10%;
+        transform: translateX(0) rotate(0deg);
+    }
+    50% {
+        transform: translateX(20px) rotate(180deg);
     }
     100% {
         top: 110%;
+        transform: translateX(0) rotate(360deg);
     }
 }
 

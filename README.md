@@ -1,7 +1,8 @@
 ## Hi there
 + About me
-3+ yr Software Engineer/Algorithm Engineer with research focus in 3D Vision
+3+ yr Software Engineer/Algorithm Engineer with research focus in 3D Vision.
 Also a gamer.
+More at https://pamikk.github.io/Pamikk/
 + Coding
   + Languages: 
     + Python, C/C++, C#, Matlab, JAVA
@@ -16,4 +17,10 @@ Also a gamer.
   + Deep Learning
   + Some rendering
   + a little full stack
++ TODO
+  + [x] website index page
+  + [x] About me page
+  + [ ] Gallery for my bunny
+  + [ ] blogs of paper reading notes
+  + [ ] beautify
 
